@@ -1,0 +1,25 @@
+{
+  "name": "transferapitests",
+  "version": "1.0.0",
+  "description": "Transfer Api Tests",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "supertest": "^6.2.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzz13337/transferApiTests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hzz13337/transferApiTests/issues"
+  },
+  "homepage": "https://github.com/hzz13337/transferApiTests#readme"
+}
