@@ -10,7 +10,7 @@
     "supertest": "^6.2.2"
   },
   "scripts": {
-    "test": "mocha ./tests"
+    "test": "mocha --recursive ./tests"
   },
   "repository": {
     "type": "git",
