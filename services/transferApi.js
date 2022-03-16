@@ -58,13 +58,12 @@ class TransferApiWrapper {
   getUrl() {
     const queryString = [
       this.#calculationBase, this.#amount,
-      this.#fromCountryCode, this.#toCountryCode, this.#fromCurrencyCode,
-      this.#toCurrencyCode].join("&")
-
+      this.#fromCountryCode, this.#toCountryCode,
+      this.#fromCurrencyCode, this.#toCurrencyCode].join("&")
     return `${this.#endpoint}${queryString}`
   }
   async get() {
-    return request(this.#baseUrl).get(this.#getUrl());
+    return request(this.#baseUrl).get(this.getUrl());
   }
 }
 
