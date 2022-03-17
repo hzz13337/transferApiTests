@@ -7,8 +7,8 @@ const transferApi = new TransferApiWrapper()
   .setAmount('150.00')
   .setFromCountryCode('TR')
   .setToCountryCode('PL')
-  .setfromCurrencyCode('TRY')
-  .settoCurrencyCode('EUR')
+  .setFromCurrencyCode('TRY')
+  .setToCurrencyCode('EUR')
 
 let response;
 let todayDeliveryOption;

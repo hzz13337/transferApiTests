@@ -7,8 +7,8 @@ const transferApi = new TransferApiWrapper()
   .setAmount('150.00')
   .setFromCountryCode('LT')
   .setToCountryCode('PL')
-  .setfromCurrencyCode('EUR')
-  .settoCurrencyCode('EUR')
+  .setFromCurrencyCode('EUR')
+  .setToCurrencyCode('EUR')
 
 let response;
 let standardDeliveryOption;

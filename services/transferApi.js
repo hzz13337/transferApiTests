@@ -41,14 +41,14 @@ class TransferApiWrapper {
     this.#toCountryCode = `toCountryCode=${toCountryCode}`
     return this;
   }
-  setfromCurrencyCode(fromCurrencyCode) {
+  setFromCurrencyCode(fromCurrencyCode) {
     if (fromCurrencyCode.length == 0) {
       throw new Error("fromCurrencyCode is empty")
     }
     this.#fromCurrencyCode = `fromCurrencyCode=${fromCurrencyCode}`
     return this;
   }
-  settoCurrencyCode(toCurrencyCode) {
+  setToCurrencyCode(toCurrencyCode) {
     if (toCurrencyCode.length == 0) {
       throw new Error("toCurrencyCode is empty")
     }

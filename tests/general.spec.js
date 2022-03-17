@@ -10,8 +10,8 @@ describe('Transfer API', async () => {
       .setAmount('150.00')
       .setFromCountryCode('LT')
       .setToCountryCode('PL')
-      .setfromCurrencyCode('EUR')
-      .settoCurrencyCode('EUR')
+      .setFromCurrencyCode('EUR')
+      .setToCurrencyCode('EUR')
   })
   it("should have standard delivery option", async () => {
     const response = await transferApi.get();
@@ -28,7 +28,7 @@ describe('Transfer API', async () => {
   it("should have today delivery option", async () => {
     const response = await transferApi
       .setFromCountryCode('TR')
-      .setfromCurrencyCode('TRY')
+      .setFromCurrencyCode('TRY')
       .get();
     expect(response.statusCode).to.equal(200)
     expect(response.body.deliveryOptions).to.have.property('today')
